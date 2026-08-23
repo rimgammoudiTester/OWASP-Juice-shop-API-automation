@@ -25,6 +25,11 @@ Rest Assured +JAVA+ TestNG +assertj-core + log4j-api + allure-report + github + 
 
 architecture Of project captures : 
 <img width="401" height="512" alt="image" src="https://github.com/user-attachments/assets/fc437f21-2973-474e-bffc-72e4f7861ed0" />
+<img width="276" height="473" alt="image" src="https://github.com/user-attachments/assets/d71dcafa-bb32-4dbd-a716-e6a9fd280a41" />
+<img width="345" height="434" alt="image" src="https://github.com/user-attachments/assets/989d740e-fe4a-4240-871e-6ab8eab4a6e9" />
+<img width="325" height="242" alt="image" src="https://github.com/user-attachments/assets/9d98c6f0-44ad-4ae8-bf73-66cf8473df57" />
+
+
 
 
 
