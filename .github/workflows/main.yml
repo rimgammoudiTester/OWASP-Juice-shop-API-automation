@@ -1,0 +1,18 @@
+name: my first workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: the step one is printing hello it's my first personalized workFlow
+        run: echo "hello it's my first personalized workFlow"
+       
+     
+    
+   
