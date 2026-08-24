@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: the step one is printing hello it's my first personalized workFlow
         run: echo "hello it's my first personalized workFlow"
+      - name: the next step is to write the second message
+        run: echo "hello this is the second message sending"
+        
        
      
     
