@@ -1,0 +1,17 @@
+package owaspJuiceShop.enums.homePage;
+
+public enum HomePagePages {
+    USER_PROFILE,
+    ORDER_HISTORY,
+    RECYCLE,
+    MY_SAVED_ADDRESS,
+    MY_PAYMENTS_OPTIONS,
+    DIGITAL_WALLET,
+    PRIVACY_POLICY,
+    REQUEST_DATA_EXPORT,
+    REQUEST_DATA_ERASER,
+    CHANGE_PASSWORD,
+    TWO_FA_CONFIGURATION,
+    LAST_LOGIN_IP,
+    LOGOUT
+}

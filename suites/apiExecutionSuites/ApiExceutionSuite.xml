@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="apiTestSuite">
+    <test name="api classes execution">
+    <classes>
+        <class name="apiTests.basketApiTests.BasketApiTests"/>
+    </classes>
+    </test>
+</suite>
