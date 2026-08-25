@@ -1,0 +1,11 @@
+# This workfLOW created to execute the basketApiTests
+name: basketApiRuningTests
+on:
+  push:
+   branches:
+     - OWASPbranch
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+   name: step one
+   run: echo "hello hello"
