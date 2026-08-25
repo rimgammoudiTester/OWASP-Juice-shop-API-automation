@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - OWASPbranch
 
 jobs:
   example-jobs:
