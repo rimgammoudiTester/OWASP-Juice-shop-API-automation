@@ -14,39 +14,25 @@ public class PropertyReader {
     private static final Log log = LogFactory.getLog(PropertyReader.class);
     static Properties prop;
 
-
-    //public static void readPropertyNameFromConfigFile() {
-       /* prop = new Properties();
+    static {
+        prop = new Properties();
         try {
             FileInputStream file = new FileInputStream(CONFIG_FILE);
             prop.load(file);
             log.info("File is loaded succesfully");
             file.close();
-
-
         } catch (IOException e) {
-            log.error("could not find the  property file: !");
+            log.error("could not find the property file: !");
             throw new RuntimeException(e);
-        }*/
-        static {
-            prop = new Properties();
-            try {
-                FileInputStream file = new FileInputStream(CONFIG_FILE);
-                prop.load(file);
-                log.info("File is loaded succesfully");
-                file.close();
-            } catch (IOException e) {
-                log.error("could not find the property file: !");
-                throw new RuntimeException(e);
-            }
-
         }
-
-
-        public static String getPropertyFromConfigFile (String key){
-
-            return prop.getProperty(key);
-        }
-
 
     }
+
+
+    public static String getPropertyFromConfigFile(String key) {
+
+        return prop.getProperty(key);
+    }
+
+
+}

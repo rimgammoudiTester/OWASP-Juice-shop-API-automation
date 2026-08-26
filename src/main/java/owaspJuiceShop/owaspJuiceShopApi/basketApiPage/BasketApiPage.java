@@ -24,7 +24,7 @@ public class BasketApiPage  extends GenericApiKeyWords {
     public Response deleteBasket(String basketId,int basketIdValue, String basketEndpoint)
     {
 
-      return  deleteObjectByPathParameter(basketId,basketId,basketEndpoint);
+      return  deleteObjectByPathParameter(basketId,basketIdValue,basketEndpoint);
     }
 
     //Method usefull to add quantity

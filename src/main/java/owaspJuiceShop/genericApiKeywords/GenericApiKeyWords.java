@@ -3,31 +3,31 @@ import bases.apiBasePage.ApiBasePage;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.testng.annotations.BeforeClass;
 
 import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static owaspJuiceShop.configUtility.propertyReader.PropertyReader.getPropertyFromConfigFile;
-import static owaspJuiceShop.utility.constants.apiConstants.basketApiConstants.BasketApiConstants.PATH_PARAMETER_ID;
 import static owaspJuiceShop.utility.constants.communConstants.CommunConstants.BASE_URI;
-import static owaspJuiceShop.utility.keyUtility.basketQuantityKeyUtility.BasketKeyUtility.ID;
-import static owaspJuiceShop.utility.keyUtility.basketQuantityKeyUtility.BasketKeyUtility.ID_PATH_PARAMETER;
-
-public class GenericApiKeyWords extends ApiBasePage {
+public class GenericApiKeyWords  {
     /**
      * @Author Rim Gammoudi
      *
      */
     RequestSpecification req = given();
-    HashMap<String, String> headers = new HashMap<>();
+    ApiBasePage apibasePage;
+
+    public GenericApiKeyWords()
+    {
+        this.apibasePage=new ApiBasePage();
+    }
 
 
     public RequestSpecification setupHeaders() {
 
         //return req=req.baseUri(getPropertyFromConfigFile(BASE_URI)).contentType(ContentType.JSON);
         //System.out.println(intializeTheHeaders());
-       return req = req.baseUri(getPropertyFromConfigFile(BASE_URI)).headers(intializeTheHeaders());
+       return req = req.baseUri(getPropertyFromConfigFile(BASE_URI)).headers(apibasePage.intializeTheHeaders());
     }
 
     //Method useful to extract object by query param given
