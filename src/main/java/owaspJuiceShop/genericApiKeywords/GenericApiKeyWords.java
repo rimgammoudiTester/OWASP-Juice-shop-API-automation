@@ -9,25 +9,25 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static owaspJuiceShop.configUtility.propertyReader.PropertyReader.getPropertyFromConfigFile;
 import static owaspJuiceShop.utility.constants.communConstants.CommunConstants.BASE_URI;
-public class GenericApiKeyWords  {
+public class GenericApiKeyWords extends ApiBasePage {
     /**
      * @Author Rim Gammoudi
      *
      */
     RequestSpecification req = given();
-    ApiBasePage apibasePage;
+    //ApiBasePage apibasePage;
 
-    public GenericApiKeyWords()
+   /* public GenericApiKeyWords()
     {
         this.apibasePage=new ApiBasePage();
-    }
+    }*/
 
 
     public RequestSpecification setupHeaders() {
 
         //return req=req.baseUri(getPropertyFromConfigFile(BASE_URI)).contentType(ContentType.JSON);
         //System.out.println(intializeTheHeaders());
-       return req = req.baseUri(getPropertyFromConfigFile(BASE_URI)).headers(apibasePage.intializeTheHeaders());
+       return req = req.baseUri(getPropertyFromConfigFile(BASE_URI)).headers(intializeTheHeaders());
     }
 
     //Method useful to extract object by query param given
@@ -54,7 +54,7 @@ public class GenericApiKeyWords  {
     //Method useful to create object
     public Response createObject(Object payload, String endPoint) {
 
-        return setupHeaders().body(payload).contentType(ContentType.JSON).post(endPoint).then().extract().response();
+        return setupHeaders().contentType(ContentType.JSON).body(payload).post(endPoint).then().extract().response();
 
     }
 

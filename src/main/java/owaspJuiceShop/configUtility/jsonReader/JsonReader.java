@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 public class JsonReader {
-    private static final Logger log = LoggerFactory.getLogger(JsonReader.class);
+    public static final Logger log = LoggerFactory.getLogger(JsonReader.class);
 
 
 

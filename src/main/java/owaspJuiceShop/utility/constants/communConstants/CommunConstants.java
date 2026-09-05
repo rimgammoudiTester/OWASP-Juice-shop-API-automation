@@ -13,6 +13,23 @@ public class CommunConstants {
     public static final String BASE_URI = "communBaseApi";
     public static final String COMMUN_API = "communApi";
     public static final String COMMUN_REST = "communApiRest";
+    //Error message key response
+    public static final String ERROR_KEY = "error";
+
+    /** Commun response key **/
+    public static final String STATUS_KEY = "status";
+    public static final String MESSAGE_KEY = "message";
+
+
+    /** Commun response values **/
+    public static final String VALUE_STATUS_KEY = "success";
+
+
+
+
+
+
+
 
 
 
